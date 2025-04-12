@@ -2,7 +2,7 @@ import frappe
 from frappe.utils import nowdate
 from collections import defaultdict
 
-from upande_tambuzi.server_scripts.opl_qr_code_gen import generate_qr_code
+from upande_kikwetu.server_scripts.opl_qr_code_gen import generate_qr_code
 
 
 @frappe.whitelist()

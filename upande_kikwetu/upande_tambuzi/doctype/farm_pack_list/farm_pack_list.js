@@ -19,7 +19,7 @@
 // function addToConsolidatedPackList(frm) {
 //     // First call to close the farm pack list
 //     frappe.call({
-//         method: 'upande_tambuzi.upande_tambuzi.doctype.farm_pack_list.farm_pack_list.close_farm_pack_list',
+//         method: 'upande_kikwetu.upande_kikwetu.doctype.farm_pack_list.farm_pack_list.close_farm_pack_list',
 //         args: {
 //             'farm_pack_list': frm.doc.name
 //         },
@@ -27,7 +27,7 @@
 //             if(!r.exc) {
 //                 // After closing, process the CPL
 //                 frappe.call({
-//                     method: 'upande_tambuzi.upande_tambuzi.doctype.farm_pack_list.farm_pack_list.process_consolidated_pack_list',
+//                     method: 'upande_kikwetu.upande_kikwetu.doctype.farm_pack_list.farm_pack_list.process_consolidated_pack_list',
 //                     args: {
 //                         'farm_pack_list': frm.doc.name,
 //                         'sales_order': frm.doc.sales_order_id

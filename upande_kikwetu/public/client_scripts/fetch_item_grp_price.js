@@ -4,7 +4,7 @@
         
 //         if (row.item_group && row.custom_length) {
 //             frappe.call({
-//                 method: "upande_tambuzi.server_scripts.fetch_item_grp_price.get_item_group_price",
+//                 method: "upande_kikwetu.server_scripts.fetch_item_grp_price.get_item_group_price",
 //                 args: {
 //                     item_group: row.item_group,
 //                     length: row.custom_length,

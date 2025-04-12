@@ -1,7 +1,7 @@
-app_name = "upande_tambuzi"
-app_title = "Upande Tambuzi"
+app_name = "upande_kikwetu"
+app_title = "Upande kikwetu"
 app_publisher = "Upande Limited"
-app_description = "ERPNext project for Tambuzi Ltd, a dealer in flower operations."
+app_description = "ERPNext project for kikwetu Ltd, a dealer in flower operations."
 app_email = "newton@upande.com"
 app_license = "mit"
 
@@ -11,24 +11,24 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/upande_tambuzi/css/upande_tambuzi.css"
-# app_include_js = "/assets/upande_tambuzi/js/upande_tambuzi.js"
+# app_include_css = "/assets/upande_kikwetu/css/upande_kikwetu.css"
+# app_include_js = "/assets/upande_kikwetu/js/upande_kikwetu.js"
 
 # As a list to make sure it does not override_class
 app_include_js = [
-    "/assets/upande_tambuzi/client_scripts/fetch_item_grp_price.js",
-    "/assets/upande_tambuzi/client_scripts/update_stock_sales_inv.js",
-    "/assets/upande_tambuzi/client_scripts/se_rejection_reason.js",
-    "/assets/upande_tambuzi/client_scripts/so_stock_transfer.js",
-    "/assets/upande_tambuzi/client_scripts/autofetch_pricelist.js"
+    "/assets/upande_kikwetu/client_scripts/fetch_item_grp_price.js",
+    "/assets/upande_kikwetu/client_scripts/update_stock_sales_inv.js",
+    "/assets/upande_kikwetu/client_scripts/se_rejection_reason.js",
+    "/assets/upande_kikwetu/client_scripts/so_stock_transfer.js",
+    "/assets/upande_kikwetu/client_scripts/autofetch_pricelist.js"
 ]
 
 # include js, css files in header of web template
-# web_include_css = "/assets/upande_tambuzi/css/upande_tambuzi.css"
-# web_include_js = "/assets/upande_tambuzi/js/upande_tambuzi.js"
+# web_include_css = "/assets/upande_kikwetu/css/upande_kikwetu.css"
+# web_include_js = "/assets/upande_kikwetu/js/upande_kikwetu.js"
 
 # include custom scss in every website theme (without file extension ".scss")
-# website_theme_scss = "upande_tambuzi/public/scss/website"
+# website_theme_scss = "upande_kikwetu/public/scss/website"
 
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
@@ -45,7 +45,7 @@ app_include_js = [
 # Svg Icons
 # ------------------
 # include app icons in desk
-# app_include_icons = "upande_tambuzi/public/login/tambuzi_logo.svg"
+# app_include_icons = "upande_kikwetu/public/login/kikwetu_logo.svg"
 
 # Home Pages
 # ----------
@@ -53,7 +53,7 @@ app_include_js = [
 # add_to_apps_screen = [
 #     {
 #         "name": app_name,
-#         "logo": "/assets/upande_tambuzi/Login/tambuzi_logo.ico",
+#         "logo": "/assets/upande_kikwetu/Login/kikwetu_logo.ico",
 #         "title": app_title,
 #         "route": app_home,
 #         "has_permission": "erpnext.check_app_permission",
@@ -79,43 +79,43 @@ app_include_js = [
 
 # add methods and filters to jinja environment
 # jinja = {
-#   "methods": "upande_tambuzi.utils.jinja_methods",
-#   "filters": "upande_tambuzi.utils.jinja_filters"
+#   "methods": "upande_kikwetu.utils.jinja_methods",
+#   "filters": "upande_kikwetu.utils.jinja_filters"
 # }
 
 # Installation
 # ------------
 
-# before_install = "upande_tambuzi.install.before_install"
-# after_install = "upande_tambuzi.install.after_install"
+# before_install = "upande_kikwetu.install.before_install"
+# after_install = "upande_kikwetu.install.after_install"
 
 # Uninstallation
 # ------------
 
-# before_uninstall = "upande_tambuzi.uninstall.before_uninstall"
-# after_uninstall = "upande_tambuzi.uninstall.after_uninstall"
+# before_uninstall = "upande_kikwetu.uninstall.before_uninstall"
+# after_uninstall = "upande_kikwetu.uninstall.after_uninstall"
 
 # Integration Setup
 # ------------------
 # To set up dependencies/integrations with other apps
 # Name of the app being installed is passed as an argument
 
-# before_app_install = "upande_tambuzi.utils.before_app_install"
-# after_app_install = "upande_tambuzi.utils.after_app_install"
+# before_app_install = "upande_kikwetu.utils.before_app_install"
+# after_app_install = "upande_kikwetu.utils.after_app_install"
 
 # Integration Cleanup
 # -------------------
 # To clean up dependencies/integrations with other apps
 # Name of the app being uninstalled is passed as an argument
 
-# before_app_uninstall = "upande_tambuzi.utils.before_app_uninstall"
-# after_app_uninstall = "upande_tambuzi.utils.after_app_uninstall"
+# before_app_uninstall = "upande_kikwetu.utils.before_app_uninstall"
+# after_app_uninstall = "upande_kikwetu.utils.after_app_uninstall"
 
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "upande_tambuzi.notifications.get_notification_config"
+# notification_config = "upande_kikwetu.notifications.get_notification_config"
 
 # Permissions
 # -----------
@@ -150,27 +150,27 @@ app_include_js = [
 doc_events = {
     "Sales Order": {
         "on_submit":
-        "upande_tambuzi.server_scripts.pick_list_automation.create_pick_list_for_sales_order",
+        "upande_kikwetu.server_scripts.pick_list_automation.create_pick_list_for_sales_order",
         "before_submit":
-        "upande_tambuzi.upande_tambuzi.custom.sales_order_custom.validate_customer_check_limit",
+        "upande_kikwetu.upande_kikwetu.custom.sales_order_custom.validate_customer_check_limit",
         "on_update":
-        "upande_tambuzi.server_scripts.so_delivery_warehouse.handle_sales_order_approval",
+        "upande_kikwetu.server_scripts.so_delivery_warehouse.handle_sales_order_approval",
         "on_cancel":
-        "upande_tambuzi.server_scripts.so_delivery_warehouse.handle_sales_order_cancellation"
+        "upande_kikwetu.server_scripts.so_delivery_warehouse.handle_sales_order_cancellation"
     },
     "Consolidated Pack List": {
         "on_submit":
-        "upande_tambuzi.server_scripts.create_sales_invoice.create_sales_invoice_from_packlist",
+        "upande_kikwetu.server_scripts.create_sales_invoice.create_sales_invoice_from_packlist",
         # "before_submit":
-        # "upande_tambuzi.server_scripts.completion_percentage.validate_completion_percentage"
+        # "upande_kikwetu.server_scripts.completion_percentage.validate_completion_percentage"
     },
     "Sales Invoice": {
         "on_submit":
-        "upande_tambuzi.server_scripts.sinv_approved_by.set_approved_by"
+        "upande_kikwetu.server_scripts.sinv_approved_by.set_approved_by"
     },
     "Farm Pack List": {
         "before_cancel":
-        "upande_tambuzi.server_scripts.fpl_to_cpl_link.before_cancel"
+        "upande_kikwetu.server_scripts.fpl_to_cpl_link.before_cancel"
     }
 }
 
@@ -180,46 +180,46 @@ doc_events = {
 scheduler_events = {
     # "cron": {
     #     "* * * * *": [
-    #         "upande_tambuzi.tasks.transfer_stock"
+    #         "upande_kikwetu.tasks.transfer_stock"
     #     ]
     # },
     # "all": [
-    #     "upande_tambuzi.tasks.transfer_stock"
+    #     "upande_kikwetu.tasks.transfer_stock"
     # ],
-    "daily": ["upande_tambuzi.tasks.transfer_stock"],
+    "daily": ["upande_kikwetu.tasks.transfer_stock"],
     #   "hourly": [
-    #       "upande_tambuzi.tasks.hourly"
+    #       "upande_kikwetu.tasks.hourly"
     #   ],
     #   "weekly": [
-    #       "upande_tambuzi.tasks.weekly"
+    #       "upande_kikwetu.tasks.weekly"
     #   ],
     #   "monthly": [
-    #       "upande_tambuzi.tasks.monthly"
+    #       "upande_kikwetu.tasks.monthly"
     #   ],
 }
 
 # Testing
 # -------
 
-# before_tests = "upande_tambuzi.install.before_tests"
+# before_tests = "upande_kikwetu.install.before_tests"
 
 # Overriding Methods
 # ------------------------------
 #
 # override_whitelisted_methods = {
-#   "frappe.desk.doctype.event.event.get_events": "upande_tambuzi.event.get_events"
+#   "frappe.desk.doctype.event.event.get_events": "upande_kikwetu.event.get_events"
 # }
 
 override_class = {
     "erpnext.controllers.taxes_and_totals.calculate_taxes_and_totals":
-    "upande_tambuzi.overrides.standard_system_rate.CustomTaxesAndTotals"
+    "upande_kikwetu.overrides.standard_system_rate.CustomTaxesAndTotals"
 }
 
 whitelisted_methods = {
     "get_item_group_price":
-    "upande_tambuzi.server_scripts.fetch_item_grp_price.get_item_group_price",
+    "upande_kikwetu.server_scripts.fetch_item_grp_price.get_item_group_price",
     "create_sales_invoice":
-    "upande_tambuzi.server_scripts.create_sales_invoice.create_sales_invoice"
+    "upande_kikwetu.server_scripts.create_sales_invoice.create_sales_invoice"
 }
 
 #
@@ -227,7 +227,7 @@ whitelisted_methods = {
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-#   "Task": "upande_tambuzi.task.get_dashboard_data"
+#   "Task": "upande_kikwetu.task.get_dashboard_data"
 # }
 
 # exempt linked doctypes from being automatically cancelled
@@ -241,13 +241,13 @@ whitelisted_methods = {
 
 # Request Events
 # ----------------
-# before_request = ["upande_tambuzi.utils.before_request"]
-# after_request = ["upande_tambuzi.utils.after_request"]
+# before_request = ["upande_kikwetu.utils.before_request"]
+# after_request = ["upande_kikwetu.utils.after_request"]
 
 # Job Events
 # ----------
-# before_job = ["upande_tambuzi.utils.before_job"]
-# after_job = ["upande_tambuzi.utils.after_job"]
+# before_job = ["upande_kikwetu.utils.before_job"]
+# after_job = ["upande_kikwetu.utils.after_job"]
 
 # User Data Protection
 # --------------------
@@ -277,7 +277,7 @@ whitelisted_methods = {
 # --------------------------------
 
 # auth_hooks = [
-#   "upande_tambuzi.auth.validate"
+#   "upande_kikwetu.auth.validate"
 # ]
 
 # Automatically update python controller files with type annotations for this app.
